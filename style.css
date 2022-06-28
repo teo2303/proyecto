@@ -50,9 +50,6 @@ body {
     transition: all 1s;
 }
 
-.grid1 li img{
-    
-}
 
 .grid1 li:hover{
     border: 1px solid black;
