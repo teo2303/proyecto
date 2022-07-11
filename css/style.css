@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #lista1 li {
   padding-left: 3px;
   padding-right: 3px;
@@ -62,10 +67,15 @@ body {
   transform: scale(1.1);
 }
 
+.carrusel-1 {
+  padding: 5px;
+  margin: 2%;
+}
+
 .grid2 {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px;
 }
 
@@ -80,46 +90,65 @@ body {
 }
 
 #lista3 li {
-  display: inline;
+  display: flex;
   padding-left: 3px;
   padding-right: 3px;
 }
 
 #lista3 li img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   margin: 10px;
 }
 
-#lista4 li img {
-  width: 200px;
-  height: 200px;
+.vid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: larger;
 }
 
-.img1 {
-  display: flex;
+@media screen and (max-width: 710px) {
+  .vid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.vid1 iframe {
+  width: 100%;
+  height: 100%;
 }
 
-.img2 {
-  display: flex;
+.vid1-a {
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-.img3 {
-  display: flex;
+.lista4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: flex-start;
 }
 
-.img4 {
-  display: flex;
+.lista4 div img {
+  width: 30%;
+}
+
+.lista4 div:hover {
+  background-color: bisque;
+  border: solid 1px black;
 }
 
 /* --------------------------footer-------------------------------- */
 footer {
+  display: grid;
   background-color: rgba(231, 205, 15, 0.605);
+  grid-template-columns: 1fr 1fr;
 }
 
-.carrusel-1 {
-  padding: 5px;
-  margin: 2%;
+footer div img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

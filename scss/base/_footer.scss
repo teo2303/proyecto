@@ -1,10 +1,11 @@
 /* --------------------------footer-------------------------------- */
 
 footer {
+    display: grid;
     background-color: rgba(231, 205, 15, 0.605);
+    grid-template-columns: 1fr 1fr;
 }
-
-.carrusel-1{
-    padding: 5px;
-    margin: 2%;
+footer div img:hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
 }
