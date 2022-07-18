@@ -1,0 +1,20 @@
+$standar: (
+    bg-standar: rgba(231, 205, 15, 0.605),
+    display-standar:flex,
+    color-standar: #4b2,
+    bg-image-standar: url(../multimedia/img/fondo.jpg)
+);
+
+footer{
+    display: grid;
+    background-color: map-get($standar, bg-standar);
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
+
+

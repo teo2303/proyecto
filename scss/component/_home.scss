@@ -10,7 +10,7 @@ body {
   }
   
   #lista2 li img {
-    width: 100%;
+    @extend %width;
     height: 100%;
   }
   
